@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Quizz</title>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.slim.min.js" integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+
+
+</head>
+
+
+<body onload="setInterval(updateTime, 1000)">
+    
+  <time id="current-time"></time>
+
+<div class="login-form">
+
+ <form action="index.html" >
+
+    <h1>WELCOME</h1>
+    <p> to final quizz </p>
+
+    <div class="txtb">
+      <input type="email" id="email" name="email" required> 
+      <span data-placeholder="Email"></span>
+    </div>
+
+
+    <div class="txtb">
+      <input type="text" id="name" name="name" required>
+      <span data-placeholder="Name"></span>
+
+    </div>
+ </form>
+
+ <button onclick="delay()" type="submit" class="logbtn" value="login">login</button>
+
+</div>
+
+     
+     
+</body>
+
+<script type="text/javascript">
+    $(".txtb input").on("focus", function() {
+      $(this).addClass("focus");
+    })
+    
+      $(".txtb input").on("blur", function() {
+        if($(this).val()=="")
+      $(this).removeClass("focus");
+    })
+  </script>  
+
+  
+</html>

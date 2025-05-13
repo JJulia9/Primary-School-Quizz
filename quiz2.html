@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Literacy</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="quizzStyle.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bttn.css/0.2.4/standalone/pill.min.css" integrity="sha512-du8PrVAyO9jYtkWlRDdd922n2y0YsnEYhBmcVXQst7cfg+V/7QNUWGgaOQ6QJLgf4U3w6w/JyWH9USdzr+7Lqw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+
+<body onclick>
+  
+  <div class="navbar">
+  <img id="icon" src="images/accountIcon.svg">
+  <!-- <label for="" id="display">Hi</label> -->
+  
+  <label for="" id="showName"></label>
+
+  </div>
+  
+  <div id="current-time"></div>
+  
+  
+   
+
+  
+    <div class="start-screen">
+      
+      
+     
+
+
+
+      <div class="quizMessageContainer">
+          <h2 class="quizMessage">This is a Basic Literacy quiz</h2>
+          <p class="quizParagraph">Press the button when you are ready to start.<br>You have 60 seconds to find a correct answer.</p>
+
+        </div>
+
+      <button onclick="startQuiz()" id="start-button"  class="bttn-pill bttn-md bttn-danger" type="button">start</button>
+
+    </div>
+
+      <div id="display-container" class="hide">
+        
+
+        <div class="header">
+
+          <div class="number-of-count">
+            <span class="number-of-question">1 of 5 questions</span>
+          </div>
+
+          <div class="timer-div">
+            <img src="https://uxwing.com/wp-content/themes/uxwing/download/time-and-date/stopwatch-icon.png" width="20px" />
+            <span class="time-left">60s</span>
+          </div>
+
+        </div>
+
+        <div id="container">
+          <!-- questions and options will be displayed here -->
+          
+        </div>
+
+        <button id="next-button"  class="bttn-pill bttn-md bttn-danger" >next</button>
+      </div>
+
+
+      <div class="score-container hide">
+        <div id="user-score">Demo Score</div>
+        <button id="restart"  class="bttn-pill bttn-md bttn-danger" onclick="openHomePage()">home</button>
+
+          <img id="resultPic" src="images/happy.svg" alt="">
+        
+      </div>
+
+
+      <script src="quizzScript2.js"></script>
+
+</body>
+</html>
